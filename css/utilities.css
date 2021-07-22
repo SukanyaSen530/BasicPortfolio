@@ -1,0 +1,122 @@
+/* Flexbox */
+.flex {
+  display: flex;
+}
+
+.flex .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  margin: 30px;
+}
+
+.flex-row {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 0.5rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1rem;
+}
+
+.Card {
+  width: 400px;
+  background-color: var(--second);
+  padding: 2%;
+  border-radius: 5px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.Card p {
+  font-size: 0.7rem;
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.bg-primary {
+  background: var(--first);
+}
+.bg-secondary {
+  background: var(--second);
+}
+
+.btn-first,
+.bg-first {
+  background: var(--fifth);
+  color: #fff;
+}
+
+.btn-second,
+.bg-second {
+  background: var(--fourth);
+  color: #fff;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+/* Images */
+.rounded {
+  height: 150px;
+  border-radius: 50%;
+}
+
+.container {
+  padding-top: 20px;
+  width: 400px;
+  margin: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  font-size: 1rem;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer a:hover {
+  color: var(--fifth);
+}
+
+.footer .social > * {
+  margin-right: 30px;
+}

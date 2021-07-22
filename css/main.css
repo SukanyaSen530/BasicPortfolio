@@ -1,0 +1,294 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Sacramento', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --first: #edc7b7;
+  --second: #eee2dc;
+  --third: #bab2b5;
+  --fourth: #123c69;
+  --fifth: #ac3b61;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2rem;
+  padding: 10px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.navbar {
+  justify-content: space-between;
+  flex: 1;
+  height: 70px;
+  width: 100%;
+  background-color: transparent;
+  opacity: 0.7;
+  position: fixed;
+  top: 0px;
+  transition: 0.5s;
+}
+
+#logo {
+  flex: 1;
+  margin-left: 40px;
+}
+
+.navbar ul {
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+}
+
+.navbar a:hover {
+  color: #21094e;
+  font-weight: bold;
+  border-bottom: var(--fourth) 2px solid;
+}
+
+.navbar a {
+  color: black;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+#landing-page {
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+img {
+  height: 100px;
+}
+
+#content-div {
+  padding-top: 100px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.content {
+  flex: 1;
+}
+
+.content h1 {
+  font-family: "Sacramento", cursive;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.content-img {
+  padding: 20px;
+  height: 80vh;
+  width: 40vw;
+  flex: 1;
+}
+
+.top {
+  background-color: var(--fifth);
+}
+
+/* SKILLS */
+
+#skills {
+  height: 450px;
+  text-align: center;
+  padding: 40px;
+}
+
+/* SHOWCASE */
+#showcase {
+  height: 450px;
+  padding: 0 50px;
+  width: 100%;
+}
+
+#showcase a,
+#showcase img,
+#showcase p {
+  margin-bottom: 1rem;
+}
+
+/* CONTACTS */
+#contact {
+  height: 300px;
+  text-align: center;
+  padding: 40px;
+}
+
+#contact a {
+  margin-top: 1rem;
+}
+/* 
+Footer */
+
+/* PROJECT */
+#projects {
+  text-align: center;
+}
+.row {
+  font-size: 0.9rem;
+  margin: 20px;
+}
+.row .btn {
+  padding: 5px 20px;
+  margin: 0 10px;
+}
+.row > h3 {
+  padding: 10px;
+}
+#projects .container {
+  width: 900px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+/* BLOGS */
+#blogs .container {
+  width: 600px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+#blogs .btn {
+  margin-left: 0;
+}
+
+/* INTERESTS */
+#Interests .container {
+  width: 600px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+#Interests .hobbies-img {
+  margin: 0 2rem;
+}
+
+#Interests .hobbies-title {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+#Interests h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #landing-page {
+    height: 70vh;
+  }
+  #content-div {
+    padding-top: 150px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content h1 {
+    font-size: 2rem;
+  }
+  .navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  #logo {
+    margin-left: 0;
+    line-height: 0;
+    margin-top: 20px;
+  }
+  #logo h3 {
+    font-size: 1.5rem;
+  }
+  .navbar a {
+    padding: 10px 10px;
+  }
+  #showcase {
+    flex-direction: column;
+    height: 100vh;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+  .btn {
+    padding: 5px 10px;
+  }
+  #showcase .column {
+    margin: 0;
+  }
+  #contact {
+    height: 40vh;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  #contact .container {
+    width: 100%;
+  }
+
+  #projects .container,
+  #blogs .container,
+  #Interests .container {
+    padding-top: 100px;
+    width: 100%;
+  }
+
+  #projects .Card {
+    margin: 1rem;
+    width: 90%;
+  }
+
+  #projects .Card button {
+    padding: 2px 5px;
+  }
+
+  #projects .grid-2 {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  #Interests .flex-row,
+  #Interests .flex-row-reverse {
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  #Interests .hobbies-img {
+    width: 100px;
+    margin: auto;
+  }
+
+  .footer {
+    height: 150px;
+  }
+}

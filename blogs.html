@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="copyright" content="Copyright @SS">
+    <meta name="keywords" content="Portfolio, Web Developer">
+    <meta http-equiv="refresh" content="30">
+    <title>Blogs</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Sacramento&display=swap" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+
+    <!-- stylesheets -->
+     <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        h2{
+            font-weight: 400;
+            color: var(--fourth);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Landing Page -->
+        <header class="bg-primary">
+            <nav class="navbar flex">
+                <div id="logo">
+                    <h3>SS</h3>
+                </div>
+                    <ul class="flex">
+                        <li><a href="./index.html#home">Home</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li><a href="./blogs.html">Blogs</a></li>
+                        <li><a href="./index.html#contact">Contact</a></li>
+                    </ul>
+            </nav>
+        </header>
+
+    <!-- Blogs -->
+    <section id="blogs" class="bg-secondary">
+        <div class="container">
+            <div class="row">
+                <h2>ExpressJs, A Friend of NodeJs</h2>
+                <small>8th June, 2021</small>
+                <p>Express. js is a free and open-source web application framework for Node js. It is used for designing and building web applications quickly and easily.</p>   
+                <a href="./blogs/blog1.html" class="btn btn-first">Read More <i class="fas fa-chevron-circle-right"></i></a>
+            </div>
+            <div class="row">
+                <h2>A Tool for automating tasks!</h2>
+                <small>9th June, 2021</small>
+                <p>PowerApps from Microsoft, is a tool that helps to build custom apps, drive process automation for businesses of all sizes</p>   
+                <a href="./blogs/blog2.html" class="btn btn-first">Read More <i class="fas fa-chevron-circle-right"></i></a>
+            </div>
+            <div class="row">
+                <h2>100 Days of Sketching!</h2>
+                <small>10th June, 2021</small>
+                <p></p>   
+                <a href="./blogs/blog3.html" class="btn btn-first">Read More <i class="fas fa-chevron-circle-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer bg-second">
+        <div class="social">
+          <a href="https://github.com/SukanyaSen530"><i class="fab fa-github-square fa-2x"></i></a>
+          <a href="https://www.linkedin.com/in/sukanya-sen-615980130/"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram-square fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2021 - Sukanya Sen</p>
+      </footer>
+
+      <script>
+        window.addEventListener('scroll', ()=>{
+            const navbar = document.querySelector('nav');
+            navbar.classList.toggle('top', window.scrollY > 0);
+        });
+    </script>
+</body>
+</html>
