@@ -220,6 +220,11 @@ Footer */
   #landing-page {
     height: 70vh;
   }
+
+  .navbar a {
+    font-size: 1.2rem;
+  }
+
   #content-div {
     padding-top: 150px;
     flex-direction: column;
@@ -272,11 +277,6 @@ Footer */
   #Interests .container {
     padding-top: 100px;
     width: 100%;
-  }
-
-  #projects .Card {
-    margin: 1rem;
-    width: 90%;
   }
 
   #projects .Card button {
