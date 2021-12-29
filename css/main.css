@@ -136,6 +136,10 @@ img {
   padding: 40px;
 }
 
+#skills .icon {
+  height: 15px;
+}
+
 /* SHOWCASE */
 #showcase {
   height: 450px;
