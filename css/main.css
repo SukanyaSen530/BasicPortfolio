@@ -199,6 +199,13 @@ Footer */
 }
 
 /* INTERESTS */
+#Interests {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #Interests .container {
   width: 600px;
   padding-top: 100px;
