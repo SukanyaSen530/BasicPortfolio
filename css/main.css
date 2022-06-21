@@ -207,34 +207,6 @@ Footer */
   margin-left: 0;
 }
 
-/* INTERESTS */
-#Interests {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#Interests .container {
-  width: 600px;
-  padding-top: 100px;
-  padding-bottom: 30px;
-}
-
-#Interests .hobbies-img {
-  margin: 0 2rem;
-}
-
-#Interests .hobbies-title {
-  text-align: justify;
-  font-size: 0.9rem;
-}
-
-#Interests h1 {
-  font-weight: 700;
-  font-size: 1.5rem;
-  text-align: center;
-}
 
 @media only screen and (max-width: 600px) {
   #landing-page {
@@ -307,24 +279,7 @@ Footer */
     grid-template-columns: repeat(1, auto);
   }
 
-  #Interests .flex-row,
-  #Interests .flex-row-reverse {
-    flex-direction: column;
-    margin: 1rem;
-  }
-
-  #Interests .hobbies-img {
-    width: 100px;
-    margin: auto;
-  }
-
   .footer {
     height: 150px;
   }
 }
-
-/* --first: #edc7b7;
-  --second: #eee2dc;
-  --third: #bab2b5;
-  --fourth: #123c69;
-  --fifth: #ac3b61; */
