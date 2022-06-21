@@ -86,6 +86,10 @@ p {
   width: 100%;
 }
 
+#landing-page p{
+  font-size: 2.3rem;
+}
+
 img {
   height: 100px;
 }
@@ -189,9 +193,13 @@ Footer */
 }
 
 /* BLOGS */
+#blogs{
+  min-height: 90vh;
+}
+
 #blogs .container {
   width: 800px;
-  padding-top: 70px;
+  padding-top: 100px;
   padding-bottom: 30px;
 }
 
